@@ -1,0 +1,31 @@
+html {
+	height: 100%;
+}
+body {
+	background-color: #424242;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-family: Arial;
+	background: linear-gradient(
+		180deg,
+		rgba(18, 0, 48, 1) 0%,
+		rgba(102, 39, 149, 1) 100%
+	);
+	position: relative;
+}
+
+#container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#container > div {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: url(http://www.freepngimg.com/thumb/snowflakes/52-snowflake-png-image-thumb.png);
+	background-size: 100% 100%;
+}
