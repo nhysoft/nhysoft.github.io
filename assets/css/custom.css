@@ -1,0 +1,361 @@
+/* DUNV overrides on top of the Niotech template (main.css) */
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+footer[id] {
+  scroll-margin-top: 90px;
+}
+
+.header-logo img,
+.offcanvas__logo img {
+  height: 46px;
+  width: auto;
+}
+
+/* Hero */
+.intro-content .fancy-box .app-icons {
+  display: flex;
+}
+.intro-content .fancy-box .app-icons img {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+.intro-content .fancy-box .app-icons img + img {
+  margin-left: -12px;
+}
+.intro-content .fancy-box.style5 .rating i {
+  color: var(--theme);
+  margin-right: 4px;
+}
+
+.intro-wrapper.style1 .intro-thumb.hero-phones {
+  position: relative;
+  min-height: 560px;
+  margin-top: 110px;
+  padding-top: 0;
+}
+@media (min-width: 1200px) {
+  .intro-wrapper.style1 .intro-thumb.hero-phones {
+    margin-top: 170px;
+  }
+}
+.hero-phones .phone-shot {
+  position: absolute;
+  width: 250px;
+  border-radius: 34px;
+  border: 8px solid #1b1b24;
+  box-shadow: 0 30px 60px rgba(40, 20, 90, 0.25);
+  z-index: 2;
+}
+.hero-phones .phone-shot.front {
+  right: 40px;
+  top: 20px;
+}
+.hero-phones .phone-shot.back {
+  right: 230px;
+  top: 90px;
+  width: 220px;
+  z-index: 1;
+}
+.hero-phones .phone-shot.back.landscape {
+  right: 150px;
+  top: 120px;
+  width: 400px;
+  border-radius: 22px;
+}
+
+/* Shared screenshot look */
+.about-shots img,
+.app-shots img,
+.faq-shots img,
+.cta-phone img,
+.gallery-item img {
+  border-radius: 24px;
+  box-shadow: 0 24px 50px rgba(40, 20, 90, 0.18);
+}
+
+.about-shots,
+.app-shots,
+.faq-shots {
+  position: relative;
+}
+.about-shots .main,
+.app-shots .shot-wide {
+  width: 88%;
+}
+.about-shots .float,
+.app-shots .shot-phone,
+.faq-shots .float-bob-x {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  width: 32%;
+  border: 6px solid #fff;
+}
+
+.app-shots.pinball {
+  padding-bottom: 60px;
+}
+.app-shots.pinball .shot-landscape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  border: 6px solid #fff;
+}
+
+.faq-shots {
+  display: flex;
+  justify-content: center;
+}
+.faq-shots > img:first-child {
+  width: 60%;
+  max-width: 340px;
+}
+.faq-shots .float-bob-x {
+  right: 6%;
+  width: 34%;
+  max-width: 200px;
+}
+
+/* App cards */
+.app-card {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+  padding: 32px;
+  border-radius: 24px;
+  background: var(--theme3);
+  border: 1px solid rgba(116, 68, 253, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(116, 68, 253, 0.15);
+}
+.app-card .app-icon {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+.app-card h3 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+.app-card .tagline {
+  color: var(--theme);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.app-card .app-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+.app-card .app-meta span {
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #fff;
+  color: var(--title);
+}
+.app-card .app-link {
+  color: var(--theme);
+  font-weight: 600;
+}
+.app-card .app-link i {
+  margin-left: 6px;
+}
+
+/* Store badges */
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+.store-badges img,
+.cta-app a img {
+  height: 52px;
+  width: auto;
+}
+
+/* Gallery */
+.gallery-item {
+  display: block;
+  height: 100%;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.gallery-item:hover img {
+  transform: scale(1.02);
+}
+@media (min-width: 992px) {
+  .gallery-item.tall img {
+    max-height: 460px;
+  }
+}
+
+/* CTA */
+.cta-apps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cta-app {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.cta-app .icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+}
+.cta-app .name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  min-width: 170px;
+}
+.cta-phone {
+  text-align: center;
+}
+.cta-phone img {
+  max-width: 260px;
+  border: 8px solid #1b1b24;
+  border-radius: 34px;
+}
+
+/* Footer */
+.footer-widgets-wrapper .contact-box .info .icon i {
+  color: var(--theme);
+  font-size: 20px;
+}
+.footer-bottom .social-links li a {
+  width: auto;
+  padding: 0 16px;
+}
+
+/* Privacy page */
+.policy-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.policy-content .updated {
+  color: #777;
+  margin-bottom: 30px;
+}
+.policy-content h2 {
+  font-size: 28px;
+  margin: 44px 0 16px;
+}
+.policy-content h3 {
+  font-size: 21px;
+  margin: 28px 0 12px;
+}
+.policy-content p,
+.policy-content li {
+  line-height: 1.75;
+}
+.policy-content ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+.policy-content li {
+  margin-bottom: 6px;
+}
+.policy-content a {
+  color: var(--theme);
+  text-decoration: underline;
+}
+.policy-content .toc {
+  margin: 24px 0;
+  padding: 24px 28px;
+  border-radius: 16px;
+  background: var(--theme3);
+}
+.policy-content .table-wrap {
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+.policy-content table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+.policy-content th,
+.policy-content td {
+  border: 1px solid #e5e5ee;
+  padding: 10px 14px;
+  vertical-align: top;
+  text-align: left;
+}
+.policy-content th {
+  background: var(--theme3);
+}
+
+@media (max-width: 1199px) {
+  .intro-wrapper.style1 .intro-thumb.hero-phones {
+    min-height: 480px;
+    max-width: 480px;
+    margin: 110px auto 0;
+  }
+  .hero-phones .phone-shot.front {
+    right: 20px;
+    width: 210px;
+  }
+  .hero-phones .phone-shot.back {
+    right: auto;
+    left: 20px;
+    width: 190px;
+  }
+  .hero-phones .phone-shot.back.landscape {
+    left: 0;
+    width: 320px;
+  }
+}
+
+@media (max-width: 575px) {
+  .intro-wrapper.style1 .intro-thumb.hero-phones {
+    min-height: 400px;
+  }
+  .hero-phones .phone-shot.front {
+    width: 170px;
+    right: 0;
+  }
+  .hero-phones .phone-shot.back {
+    width: 150px;
+    left: 0;
+  }
+  .hero-phones .phone-shot.back.landscape {
+    width: 240px;
+    top: 140px;
+  }
+  .app-card {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .store-badges img,
+  .cta-app a img {
+    height: 44px;
+  }
+  .cta-app .name {
+    min-width: 100%;
+  }
+}

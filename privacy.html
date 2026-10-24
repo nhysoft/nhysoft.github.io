@@ -1,59 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>Landing page lamborghini</title>
-    </head>
-    <body>
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav__logo">
-                    Lamborghini Ms Paint
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="DUNV">
+    <meta name="description" content="Privacy Policy for DUNV mobile apps (Ms Paint, 3D Pinball Space Cadet) and the nhysoft.github.io website.">
+    <link rel="canonical" href="https://nhysoft.github.io/privacy.html">
+    <!-- ======== Page title ============ -->
+    <title>Privacy Policy - DUNV</title>
+    <!--<< Favcion >>-->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo/dunv-icon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< NiceSelect.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--<< Custom.css >>-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="D" class="letters-loading">D</span>
+                <span data-text-preloader="U" class="letters-loading">U</span>
+                <span data-text-preloader="N" class="letters-loading">N</span>
+                <span data-text-preloader="V" class="letters-loading">V</span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mouse Cursor Start -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/dunv-logo.svg" alt="DUNV">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        DUNV makes simple, fun mobile apps for iPhone, iPad and Android.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:dujacksmith@gmail.com">dujacksmith@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-globe"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="https://nhysoft.github.io/">nhysoft.github.io</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="index.html#download" class="theme-btn text-center">
+                                <span>Download Apps<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-section-1">
+        <div id="header-sticky" class="header-1">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/images/logo/dunv-logo.svg" alt="DUNV">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-middle">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="index.html#apps">Our Apps</a></li>
+                                            <li><a href="index.html#paint">Ms Paint</a></li>
+                                            <li><a href="index.html#pinball">3D Pinball</a></li>
+                                            <li><a href="index.html#faq">FAQ</a></li>
+                                            <li class="active"><a href="privacy.html">Privacy</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="header-button ms-4">
+                                <a href="index.html#download" class="theme-btn">
+                                    <span>
+                                        Download
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-block d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcumb Section S T A R T -->
+    <div class="breadcumb-section fix">
+        <div class="breadcumb-container-wrapper" data-bg-src="assets/images/bg/breadcumgBg.png">
+            <div class="container">
+                <div class="shape1"><img src="assets/images/shape/breadCumbShape1_1.png" alt=""></div>
+                <div class="shape2"><img src="assets/images/shape/breadCumbShape1_2.png" alt=""></div>
+                <div class="breadcumb-wrapper">
+                    <div class="page-heading">
+                        <h1>Privacy Policy</h1>
+                        <div class="links">
+                            <a href="index.html">Home<span class="slash">/</span></a>Privacy Policy
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Policy Section S T A R T -->
+    <section class="section-padding fix">
+        <div class="container">
+            <article class="policy-content">
+                <p class="updated"><strong>Effective date:</strong> October 24, 2026</p>
+
+                <p>This Privacy Policy explains how <strong>DUNV</strong> ("we", "us" or "our") handles
+                    information when you use our mobile applications and our website. It applies to:</p>
+                <ul>
+                    <li><strong>Ms Paint</strong> (iOS, iPadOS and Android)</li>
+                    <li><strong>3D Pinball Space Cadet</strong> (iOS and Android)</li>
+                    <li>The website <a href="https://nhysoft.github.io/">https://nhysoft.github.io/</a></li>
+                </ul>
+                <p>Together these are called the "Services". By using the Services you agree to the practices
+                    described in this policy. If you do not agree, please do not use the Services.</p>
+
+                <div class="toc">
+                    <strong>Contents</strong>
+                    <ol class="mt-2 mb-0">
+                        <li><a href="#collect">Information we collect</a></li>
+                        <li><a href="#permissions">Device permissions</a></li>
+                        <li><a href="#third-party">Third-party services</a></li>
+                        <li><a href="#ads">Advertising and your choices</a></li>
+                        <li><a href="#use">How we use information</a></li>
+                        <li><a href="#sharing">Sharing of information</a></li>
+                        <li><a href="#retention">Data retention and security</a></li>
+                        <li><a href="#children">Children's privacy</a></li>
+                        <li><a href="#rights">Your privacy rights</a></li>
+                        <li><a href="#transfers">International transfers</a></li>
+                        <li><a href="#changes">Changes to this policy</a></li>
+                        <li><a href="#contact-us">Contact us</a></li>
+                    </ol>
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="./index.html" class="nav__link">Models</a></li>
-                        <li class="nav__item"><a href="./index.html" class="nav__link">Brand</a></li>
-                        <li class="nav__item"><a href="./index.html" class="nav__link">Store</a></li>
-                        <li class="nav__item"><a href="./privacy.html" class="nav__link">Privacy</a></li>
+                <h2 id="collect">1. Information we collect</h2>
+                <h3>Information you provide</h3>
+                <p>Our apps do not require you to create an account, and we do not ask for your name, email address,
+                    phone number or other contact details inside the apps. If you contact us by email, we receive the
+                    email address and any information you choose to include in your message.</p>
+
+                <h3>Content you create</h3>
+                <p>Drawings, images, palettes, settings and game progress are stored <strong>locally on your
+                    device</strong>. We do not upload them to our servers. They leave your device only when you
+                    choose to save them to your photo library, share them with another app, or when they are included
+                    in your device's own backup (such as iCloud or Google backup), which is governed by Apple's or
+                    Google's privacy policy.</p>
+
+                <h3>Information collected automatically</h3>
+                <p>We do not operate our own analytics or tracking servers. However, the third-party services built
+                    into our apps (see section 3) may automatically collect certain information, such as:</p>
+                <ul>
+                    <li>Device and advertising identifiers (IDFA on iOS, if you allow it; Android Advertising ID on
+                        Android)</li>
+                    <li>Device model, operating system version, language and app version</li>
+                    <li>IP address and approximate (coarse) location derived from it</li>
+                    <li>Ad interactions (impressions and taps) and basic diagnostic information such as crashes</li>
+                </ul>
+
+                <h3>Purchases</h3>
+                <p>In-app purchases (for example, VIP or ad removal) are processed entirely by the Apple App Store or
+                    Google Play. We never receive or store your payment card details. We only receive confirmation of
+                    whether a purchase is valid so we can unlock the feature you bought.</p>
+
+                <h2 id="permissions">2. Device permissions</h2>
+                <p>Our apps ask for a permission only when a feature needs it, and you can change it at any time in
+                    your device settings:</p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Permission</th>
+                                <th>App</th>
+                                <th>Why we ask</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Photos / media / storage</td>
+                                <td>Ms Paint</td>
+                                <td>To import a photo you select for editing, and to save your artwork to your
+                                    gallery. Images are processed on your device only.</td>
+                            </tr>
+                            <tr>
+                                <td>App Tracking Transparency (iOS)</td>
+                                <td>Both apps</td>
+                                <td>To ask whether ads may use your advertising identifier for personalization. If
+                                    you choose "Ask App Not to Track", you will still see ads, but they will be less
+                                    relevant.</td>
+                            </tr>
+                            <tr>
+                                <td>Internet / network access</td>
+                                <td>Both apps</td>
+                                <td>To load ads, download optional theme packs and verify purchases. Core drawing
+                                    and gameplay work offline.</td>
+                            </tr>
+                            <tr>
+                                <td>Game controller (Bluetooth)</td>
+                                <td>3D Pinball Space Cadet</td>
+                                <td>To let you play with a connected game controller. No controller data is
+                                    collected.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="third-party">3. Third-party services</h2>
+                <p>Our apps use the following third-party services, which collect information under their own
+                    privacy policies:</p>
+                <ul>
+                    <li><strong>Google AdMob</strong> (advertising) &ndash;
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy
+                            Policy</a> and
+                        <a href="https://policies.google.com/technologies/partner-sites" target="_blank"
+                            rel="noopener">How Google uses information from apps that use its services</a></li>
+                    <li><strong>Apple App Store</strong> (distribution and in-app purchases) &ndash;
+                        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy
+                            Policy</a></li>
+                    <li><strong>Google Play</strong> (distribution and in-app purchases) &ndash;
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy
+                            Policy</a></li>
+                    <li><strong>GitHub Pages</strong> (hosting of this website) &ndash;
+                        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                            target="_blank" rel="noopener">GitHub Privacy Statement</a>. GitHub may log visitor IP
+                        addresses for security purposes. This website does not use cookies, analytics or advertising
+                        of its own.</li>
+                </ul>
+                <p>We publish an <a href="app-ads.txt">app-ads.txt</a> file to declare our authorized advertising
+                    sellers and help prevent ad fraud.</p>
+
+                <h2 id="ads">4. Advertising and your choices</h2>
+                <p>Ads help us keep our apps free. Depending on your choices and where you live, ads may be
+                    personalized (based on your advertising identifier and app activity) or non-personalized (based
+                    only on contextual information such as the app you are using and your approximate location).</p>
+                <ul>
+                    <li><strong>EEA, UK and Switzerland:</strong> we use Google's consent tool to ask for your
+                        consent before personalized ads are shown. You can change your choice at any time from the
+                        privacy settings in the app, where available.</li>
+                    <li><strong>iOS:</strong> you can allow or deny tracking in the App Tracking Transparency prompt,
+                        or later in <em>Settings &gt; Privacy &amp; Security &gt; Tracking</em>.</li>
+                    <li><strong>Android:</strong> you can reset or delete your advertising ID, or opt out of ad
+                        personalization, in <em>Settings &gt; Google &gt; Ads</em> (or <em>Settings &gt; Privacy &gt;
+                        Ads</em>).</li>
+                    <li><strong>Remove ads:</strong> purchasing VIP or the ad-free option removes ads from the app.
+                    </li>
+                </ul>
+
+                <h2 id="use">5. How we use information</h2>
+                <p>Information collected through the Services is used to:</p>
+                <ul>
+                    <li>Provide and maintain the apps and their features</li>
+                    <li>Show ads and measure ad performance (through our advertising partner)</li>
+                    <li>Process and restore in-app purchases</li>
+                    <li>Diagnose crashes and improve stability</li>
+                    <li>Respond to your questions and support requests</li>
+                    <li>Prevent fraud and comply with legal obligations</li>
+                </ul>
+                <p>We do <strong>not</strong> sell your personal information, and we do not use it for any purpose
+                    other than those listed above.</p>
+
+                <h2 id="sharing">6. Sharing of information</h2>
+                <p>We do not share personal information with third parties except:</p>
+                <ul>
+                    <li>With the service providers listed in section 3, which process data to provide their services
+                    </li>
+                    <li>When required by law, regulation, legal process or a valid government request</li>
+                    <li>To protect the rights, safety and property of DUNV, our users or others</li>
+                    <li>In connection with a merger, acquisition or sale of assets, in which case this policy will
+                        continue to apply to your information</li>
+                </ul>
+
+                <h2 id="retention">7. Data retention and security</h2>
+                <p>Content you create stays on your device until you delete it or uninstall the app. Emails you send
+                    us are kept only as long as needed to help you, and then deleted. Data collected by third-party
+                    services is retained according to their own policies.</p>
+                <p>We take reasonable measures to protect information, including using encrypted connections
+                    (HTTPS) for network requests and this website. However, no method of transmission or storage is
+                    100% secure, and we cannot guarantee absolute security.</p>
+
+                <h2 id="children">8. Children's privacy</h2>
+                <p>Our apps are rated 4+ and are suitable for a general audience, but they are not directed
+                    specifically at children under 13 (or the equivalent minimum age in your country). We do not
+                    knowingly collect personal information from children. Where required by law, ad requests for
+                    users who may be children are treated as child-directed and limited to non-personalized ads.</p>
+                <p>If you are a parent or guardian and believe your child has provided us with personal information,
+                    please contact us and we will delete it.</p>
+
+                <h2 id="rights">9. Your privacy rights</h2>
+                <p>Depending on where you live (for example, under the EU/UK GDPR, the California Consumer Privacy
+                    Act (CCPA/CPRA), or Vietnam's Personal Data Protection laws), you may have the right to:</p>
+                <ul>
+                    <li>Access the personal information we hold about you and receive a copy</li>
+                    <li>Correct inaccurate information</li>
+                    <li>Request deletion of your information</li>
+                    <li>Object to or restrict certain processing, and withdraw consent at any time</li>
+                    <li>Opt out of the "sale" or "sharing" of personal information for targeted advertising</li>
+                    <li>Lodge a complaint with your local data protection authority</li>
+                </ul>
+                <p>Because we do not keep accounts or personal profiles, most data is stored only on your device and
+                    can be deleted by uninstalling the app. For data held by our advertising partner, use the ad
+                    settings described in section 4. For any other request, email us and we will respond within 30
+                    days. We will not discriminate against you for exercising your rights.</p>
+
+                <h2 id="transfers">10. International transfers</h2>
+                <p>Our service providers may process information in countries other than your own, including the
+                    United States. Where required, these transfers are protected by appropriate safeguards such as
+                    Standard Contractual Clauses.</p>
+
+                <h2 id="changes">11. Changes to this policy</h2>
+                <p>We may update this Privacy Policy from time to time. When we do, we will change the effective date
+                    at the top of this page, and for significant changes we may also notify you in the apps. Please
+                    review this page periodically.</p>
+
+                <h2 id="contact-us">12. Contact us</h2>
+                <p>If you have any questions or requests about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li><strong>Developer:</strong> DUNV</li>
+                    <li><strong>Email:</strong> <a href="mailto:dujacksmith@gmail.com">dujacksmith@gmail.com</a></li>
+                    <li><strong>Website:</strong> <a href="https://nhysoft.github.io/">https://nhysoft.github.io/</a></li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer Section    S T A R T -->
+    <footer class="footer-section position-relative" id="contact">
+        <div class="footer-widgets-wrapper style1 fix">
+            <div class="shape1"><img src="assets/images/shape/footerShape1_1.png" alt=""></div>
+            <div class="shape2"><img src="assets/images/shape/footerShape1_2.png" alt=""></div>
+            <div class="shape3"><img src="assets/images/shape/footerShape1_3.png" alt=""></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/dunv-logo.svg" alt="DUNV">
+                                </a>
+                            </div>
+                            <div class="footer-content">
+                                <p>
+                                    Simple, fun mobile apps for iPhone, iPad and Android.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3> Pages </h3>
+                            </div>
+                            <ul class="list-area">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#apps">Our Apps</a></li>
+                                <li><a href="index.html#faq">FAQ</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3> Apps </h3>
+                            </div>
+                            <ul class="list-area">
+                                <li><a href="index.html#paint">Ms Paint</a></li>
+                                <li><a href="index.html#pinball">3D Pinball Space Cadet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <div class="contact-box">
+                                <div class="subtitle">Contact</div>
+                                <div class="widget-head">Questions or feedback?</div>
+                                <div class="text">We read every email and usually reply within a few days.</div>
+                                <div class="info">
+                                    <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                                    <div class="link">
+                                        <a href="mailto:dujacksmith@gmail.com">dujacksmith@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="icon"><i class="fa-regular fa-globe"></i></div>
+                                    <div class="link">
+                                        <a href="https://nhysoft.github.io/">nhysoft.github.io</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom style1">
+            <div class="container">
+                <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                    <p>
+                        Copyright &copy; <span class="js-year">2026</span> DUNV. All rights reserved.
+                    </p>
+                    <ul class="social-links">
+                        <li><a href="privacy.html">Privacy</a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </footer>
 
-                <div class="nav__toggle" id="nav__toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-            </nav>
-        </header>
 
-        <main class="main-home">
-       
-             <iframe src="./policy.html" height="100%" width="100%" style="border:none ;padding: 5%;"></iframe>
-        
-        </main>
 
-        <!-- ICONOS -->
-        <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-        
-        <!-- MAIN -->
-        <script src="assets/js/main.js"></script>
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Tilt Js >>-->
+    <script src="assets/js/tilt.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific popup Js >>-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< NIce Select Js >>-->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.js-year').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    </script>
+</body>
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-
-        <!-- ANIMATION -->
-        <script>
-            /*TITLE Y IMG*/
-            gsap.from('.home__title', {opacity: -1, duration: 1.5, delay:1})
-            gsap.from('.home__img', {opacity: 0, duration: 1, delay:1, x: 100})
-            gsap.from('.home__information', {opacity: 0, duration: 1, delay:1.2, y: -30})
-
-            /*BOX*/
-            gsap.from('.box__medium', {opacity: 0, duration: 1.5, delay:1.3, y: -50})
-            gsap.from('.box__small', {opacity: -1, duration: 1.5, delay:1.4, y: -50})
-        </script>
-        
-    </body>
 </html>

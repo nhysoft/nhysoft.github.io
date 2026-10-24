@@ -1,92 +1,882 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>Landing page lamborghini</title>
-    </head>
-    <body>
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav__logo">
-                    Lamborghini Ms Paint
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="DUNV">
+    <meta name="description"
+        content="DUNV builds simple, fun mobile apps for iPhone, iPad and Android: Ms Paint, a pixel-friendly drawing app, and 3D Pinball Space Cadet, the classic space cadet pinball table.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DUNV - Mobile Apps for iOS & Android">
+    <meta property="og:description" content="Ms Paint and 3D Pinball Space Cadet - simple, fun apps for iPhone, iPad and Android.">
+    <meta property="og:url" content="https://nhysoft.github.io/">
+    <meta property="og:image" content="https://nhysoft.github.io/img/paint/wide-space.webp">
+    <link rel="canonical" href="https://nhysoft.github.io/">
+    <!-- ======== Page title ============ -->
+    <title>DUNV - Mobile Apps for iOS & Android</title>
+    <!--<< Favcion >>-->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo/dunv-icon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< NiceSelect.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--<< Custom.css >>-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="D" class="letters-loading">D</span>
+                <span data-text-preloader="U" class="letters-loading">U</span>
+                <span data-text-preloader="N" class="letters-loading">N</span>
+                <span data-text-preloader="V" class="letters-loading">V</span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="" class="nav__link">Models</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Brand</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Store</a></li>
-                        <li class="nav__item"><a href="./primacy.html" class="nav__link">Privacy</a></li>
-                    </ul>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
                 </div>
-
-                <div class="nav__toggle" id="nav__toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
                 </div>
-            </nav>
-        </header>
-
-        <main class="main-home">
-            <div class="home">
-                <h1 class="home__title">LAMBORGHINI</h1>
-
-                <div class="home__img">
-                    <img src="assets/img/lamborghini.png" alt="">
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="home__information">
-                    <h2 class="home__subtitle">LAMBORGHINI<br>GALLARDO LP560</h2>
-                    <p class="home__description">Lorem ipsum dolor sit amet consect  adipiscing elit, commodo tristique id quisque lobortis facilisi feugiat</p>
-                </div>
+    <!-- Mouse Cursor Start -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
 
-                <div class="box">
-                    <div class="box__medium box--dark">
-                        <ion-icon name="speedometer-outline" class="icon-box"></ion-icon>
-                        <h3 class="box__medium-title d-inline">3.7</h3>
-                        <span class="box__medium-description d-block">Sec.</span>
-                        <span class="box__medium-detail">0-100 km/h</span>
-                    </div>
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
-                    <div>
-                        <div class="box__small box--dark">
-                            <ion-icon name="trending-up-outline" class="icon-box icon-box--small"></ion-icon>
-                            <h3 class="box__small-title d-inline">325</h3>
-                            <span class="box__small-description d-block">km/h</span>
-                            <span class="box__small-detail">Top Speed</span>
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/dunv-logo.svg" alt="DUNV">
+                            </a>
                         </div>
-                        <div class="box__small box--dark">
-                            <ion-icon name="car-sport-outline" class="icon-box icon-box--small"></ion-icon>
-                            <h3 class="box__small-title d-inline">8.000</h3>
-                            <span class="box__small-description d-block">r.p.m</span>
-                            <span class="box__small-detail">Power</span>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        DUNV makes simple, fun mobile apps for iPhone, iPad and Android.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:dujacksmith@gmail.com">dujacksmith@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-globe"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="https://nhysoft.github.io/">nhysoft.github.io</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="#download" class="theme-btn text-center">
+                                <span>Download Apps<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
 
-        <!-- ICONOS -->
-        <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-        
-        <!-- MAIN -->
-        <script src="assets/js/main.js"></script>
+    <!-- Header Section Start -->
+    <header class="header-section-1">
+        <div id="header-sticky" class="header-1">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/images/logo/dunv-logo.svg" alt="DUNV">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-middle">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li><a href="#apps">Our Apps</a></li>
+                                            <li><a href="#paint">Ms Paint</a></li>
+                                            <li><a href="#pinball">3D Pinball</a></li>
+                                            <li><a href="#faq">FAQ</a></li>
+                                            <li><a href="privacy.html">Privacy</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="header-button ms-4">
+                                <a href="#download" class="theme-btn">
+                                    <span>
+                                        Download
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-block d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- Intro Section S T A R T -->
+    <section class="intro-section">
+        <div class="intro-container-wrapper style1">
+            <div class="container">
+                <div class="intro-wrapper style1 fix">
+                    <div class="shape1"><img src="assets/images/shape/introShape1_1.png" alt=""></div>
+                    <div class="shape2"><img src="assets/images/shape/introShape1_2.png" alt=""></div>
+                    <div class="shape3 d-none d-xxl-block cir36"><img src="assets/images/shape/introShape1_3.png" alt=""></div>
+                    <div class="shape4 d-none d-xxl-block cir36"><img src="assets/images/shape/introShape1_4.png" alt=""></div>
+                    <div class="shape5 d-none d-xxl-block cir36"><img src="assets/images/shape/introShape1_5.png" alt=""></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 order-2 order-xl-1">
+                                <div class="intro-content">
+                                    <div class="intro-section-title">
+                                        <div class="intro-subtitle">
+                                            <span>iOS</span>&amp; Android Apps <img src="assets/images/icon/fireIcon.svg" alt="">
+                                        </div>
+                                        <h1 class="intro-title wow fadeInUp" data-wow-delay=".2s">Simple, Fun Apps For
+                                            Your Phone &amp; Tablet.</h1>
+                                        <p class="intro-desc wow fadeInUp" data-wow-delay=".4s">DUNV builds small,
+                                            focused mobile apps that are easy to pick up and hard to put down. Draw
+                                            pixel art and doodles with Ms Paint, or relive the classic space cadet table
+                                            in 3D Pinball Space Cadet, on iPhone, iPad and Android.</p>
+                                    </div>
+                                    <div class="btn-wrapper style1 wow fadeInUp" data-wow-delay=".6s">
+                                        <a class="theme-btn" href="#apps">Explore Our Apps
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </a>
+                                        <a class="theme-btn style2" href="#download">Download Now
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </a>
+                                    </div>
+                                    <div class="fancy-box-wrapper style1">
+                                        <div class="fancy-box style1 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="item app-icons">
+                                                <img src="img/paint/icon.jpg" alt="Ms Paint icon">
+                                                <img src="img/pinball/icon.jpg" alt="3D Pinball Space Cadet icon">
+                                            </div>
+                                            <div class="item">
+                                                <h6>2 Apps</h6>
+                                                <p>Free to download</p>
+                                            </div>
+                                        </div>
+                                        <div class="fancy-box style5 wow fadeInUp" data-wow-delay=".4s">
+                                            <h6>4+</h6>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-child-reaching"></i> Rated for all ages
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 order-1 order-xl-2">
+                                <div class="intro-thumb hero-phones">
+                                    <div class="thumbShape1"><img src="assets/images/shape/introThumbShape1_1.png" alt=""></div>
+                                    <div class="thumbShape2"><img src="assets/images/shape/introThumbShape1_2.png" alt=""></div>
+                                    <img class="phone-shot back landscape wow fadeInUp" data-wow-delay=".2s"
+                                        src="img/pinball/tablet-mission.jpg" alt="3D Pinball Space Cadet on iPad">
+                                    <img class="phone-shot front img-custom-anim-right wow fadeInUp" data-wow-delay=".4s"
+                                        src="img/paint/phone-sakura.webp" alt="Ms Paint on iPhone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- ANIMATION -->
-        <script>
-            /*TITLE Y IMG*/
-            gsap.from('.home__title', {opacity: -1, duration: 1.5, delay:1})
-            gsap.from('.home__img', {opacity: 0, duration: 1, delay:1, x: 100})
-            gsap.from('.home__information', {opacity: 0, duration: 1, delay:1.2, y: -30})
+    <!-- About Us Section S T A R T -->
+    <section class="about-section section-padding fix" id="about">
+        <div class="about-container-wrapper style1">
+            <div class="container">
+                <div class="about-wrapper style1">
+                    <div class="row gy-5 gx-60 align-items-center">
+                        <div class="col-xl-6">
+                            <div class="about-shots">
+                                <img class="main wow fadeInUp" data-wow-delay=".2s" src="img/paint/ipad-meadow.webp"
+                                    alt="Ms Paint on iPad">
+                                <img class="float float-bob-x" src="img/paint/phone-night.webp"
+                                    alt="Ms Paint night theme on iPhone">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="about-content">
+                                <div class="section-title">
+                                    <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
+                                        About DUNV <img src="assets/images/icon/fireIcon.svg" alt="">
+                                    </div>
+                                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">Small Apps, Made With Care</h2>
+                                    <p class="section-desc wow fadeInUp" data-wow-delay=".6s">DUNV is an independent
+                                        mobile app developer. We focus on lightweight apps that open fast, work
+                                        offline, and do one thing well, whether that is sketching a quick idea or
+                                        chasing a high score.</p>
+                                </div>
+                                <ul class="checklist style1 wow fadeInUp" data-wow-delay=".2s">
+                                    <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Available on iPhone,
+                                        iPad and Android</li>
+                                    <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> No account or sign-up
+                                        required</li>
+                                    <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Free to play, with
+                                        optional ad-free upgrades</li>
+                                </ul>
+                                <a class="theme-btn wow fadeInUp" data-wow-delay=".2s" href="#apps">See Our Apps
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            /*BOX*/
-            gsap.from('.box__medium', {opacity: 0, duration: 1.5, delay:1.3, y: -50})
-            gsap.from('.box__small', {opacity: -1, duration: 1.5, delay:1.4, y: -50})
-        </script>
-        
-    </body>
+    <!-- Apps Section S T A R T -->
+    <section class="work-process-section section-padding pt-0 fix" id="apps">
+        <div class="work-process-container-wrapper style1">
+            <div class="container">
+                <div class="section-title text-center mxw-565 mx-auto">
+                    <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
+                        Our Apps <img src="assets/images/icon/fireIcon.svg" alt="">
+                    </div>
+                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">Pick An App And Start Playing</h2>
+                </div>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="app-card wow fadeInUp" data-wow-delay=".2s">
+                            <img class="app-icon" src="img/paint/icon.jpg" alt="Ms Paint icon">
+                            <div class="app-card-body">
+                                <h3>Ms Paint</h3>
+                                <p class="tagline">Simple Raster Graphics Editor</p>
+                                <p>A fun drawing app for quick everyday image editing, from a few doodles to
+                                    detailed pixel artwork.</p>
+                                <div class="app-meta">
+                                    <span>Graphics &amp; Design</span><span>Rated 4+</span><span>iOS &middot; Android</span>
+                                </div>
+                                <a class="app-link" href="#paint">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="app-card wow fadeInUp" data-wow-delay=".4s">
+                            <img class="app-icon" src="img/pinball/icon.jpg" alt="3D Pinball Space Cadet icon">
+                            <div class="app-card-body">
+                                <h3>3D Pinball Space Cadet</h3>
+                                <p class="tagline">The pinball you grew up with</p>
+                                <p>The classic space cadet pinball table: complete missions, rack up points and rise
+                                    through nine fleet ranks.</p>
+                                <div class="app-meta">
+                                    <span>Games &middot; Casual</span><span>Rated 4+</span><span>iOS &middot; Android</span>
+                                </div>
+                                <a class="app-link" href="#pinball">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ms Paint Section S T A R T -->
+    <section class="advantage-section fix" id="paint">
+        <div class="advantage-container-wrapper style1">
+            <div class="container">
+                <div class="advantage-wrapper style1 section-padding">
+                    <div class="container">
+                        <div class="row gy-5 d-flex align-items-center">
+                            <div class="col-xl-6 order-2 order-xl-1">
+                                <div class="advantage-content">
+                                    <div class="section-title wow fadeInUp" data-wow-delay=".2s">
+                                        <div class="subtitle">
+                                            Ms Paint <img src="assets/images/icon/fireIcon.svg" alt="">
+                                        </div>
+                                        <h2 class="title">Draw, Doodle &amp; Edit In Classic Paint Style</h2>
+                                        <p class="section-desc">Easy for beginners, handy for everyone. Ms Paint brings
+                                            the familiar paint toolbox to your phone and tablet, with modern brushes,
+                                            themes and file formats.</p>
+                                    </div>
+                                    <div class="checklist-wrapper style1 wow fadeInUp" data-wow-delay=".4s">
+                                        <ul class="checklist style1">
+                                            <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Pencil, crayon,
+                                                watercolour, neon, airbrush &amp; more</li>
+                                            <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Shapes, fill,
+                                                eyedropper, zoom &amp; text</li>
+                                            <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Unlimited undo
+                                                &amp; redo</li>
+                                        </ul>
+                                        <ul class="checklist style1">
+                                            <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Full HSV picker
+                                                &amp; custom palettes</li>
+                                            <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> PNG, JPEG, GIF,
+                                                BMP &amp; TIFF</li>
+                                            <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Themes &amp;
+                                                ad-free VIP</li>
+                                        </ul>
+                                    </div>
+                                    <div class="store-badges wow fadeInUp" data-wow-delay=".6s">
+                                        <a href="https://apps.apple.com/us/app/paint-ms/id1619725004" target="_blank"
+                                            rel="noopener"><img src="assets/images/cta/ctaAppleStore1_1.png"
+                                                alt="Download Ms Paint on the App Store"></a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.nhysoft.mspaint"
+                                            target="_blank" rel="noopener"><img
+                                                src="assets/images/cta/ctaplayStore1_1.png"
+                                                alt="Get Ms Paint on Google Play"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 order-1 order-xl-2">
+                                <div class="app-shots">
+                                    <img class="shot-wide wow fadeInDown" data-wow-delay=".4s"
+                                        src="img/paint/ipad-sakura.webp" alt="Ms Paint pixel art on iPad">
+                                    <img class="shot-phone img-custom-anim-right wow fadeInRight" data-wow-delay=".6s"
+                                        src="img/paint/phone-night.webp" alt="Ms Paint dark theme on iPhone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Pinball Section S T A R T -->
+    <section class="advantage-section section-padding fix" id="pinball">
+        <div class="container">
+            <div class="row gy-5 d-flex align-items-center">
+                <div class="col-xl-6">
+                    <div class="app-shots pinball">
+                        <img class="shot-wide wow fadeInUp" data-wow-delay=".2s" src="img/pinball/tablet-refueled.jpg"
+                            alt="3D Pinball Space Cadet table, ship re-fueled">
+                        <img class="shot-landscape wow fadeInUp" data-wow-delay=".4s" src="img/pinball/phone-gameover.jpg"
+                            alt="3D Pinball Space Cadet game over screen on a phone">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="advantage-content">
+                        <div class="section-title wow fadeInUp" data-wow-delay=".2s">
+                            <div class="subtitle">
+                                3D Pinball Space Cadet <img src="assets/images/icon/fireIcon.svg" alt="">
+                            </div>
+                            <h2 class="title">The Pinball You Grew Up With</h2>
+                            <p class="section-desc">Join the space fleet and complete missions to increase your
+                                rank, from Cadet all the way to Fleet Admiral. Hit the mission targets, launch up the
+                                ramp and keep the fuel lights burning.</p>
+                        </div>
+                        <div class="checklist-wrapper style1 wow fadeInUp" data-wow-delay=".4s">
+                            <ul class="checklist style1">
+                                <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Faithful 3D space cadet
+                                    table</li>
+                                <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Missions &amp; 9 fleet
+                                    ranks</li>
+                            </ul>
+                            <ul class="checklist style1">
+                                <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Game controller
+                                    support</li>
+                                <li><img src="assets/images/icon/checkmarkIcon.svg" alt=""> Plays fully offline</li>
+                            </ul>
+                        </div>
+                        <div class="store-badges wow fadeInUp" data-wow-delay=".6s">
+                            <a href="https://apps.apple.com/us/app/3d-pinball-space/id6455495086" target="_blank"
+                                rel="noopener"><img src="assets/images/cta/ctaAppleStore1_1.png"
+                                    alt="Download 3D Pinball Space Cadet on the App Store"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.uhdsoft.Fireworks"
+                                target="_blank" rel="noopener"><img src="assets/images/cta/ctaplayStore1_1.png"
+                                    alt="Get 3D Pinball Space Cadet on Google Play"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section S T A R T -->
+    <section class="gallery-section section-padding pt-0 fix">
+        <div class="container">
+            <div class="section-title text-center mxw-565 mx-auto">
+                <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
+                    Screenshots <img src="assets/images/icon/fireIcon.svg" alt="">
+                </div>
+                <h2 class="title wow fadeInUp" data-wow-delay=".4s">Ms Paint &amp; 3D Pinball Space Cadet</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-8">
+                    <a class="gallery-item img-popup" href="img/paint/wide-space.webp">
+                        <img src="img/paint/wide-space.webp" alt="Pixel art space scene drawn in Ms Paint">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <a class="gallery-item tall img-popup" href="img/paint/phone-sakura.webp">
+                        <img src="img/paint/phone-sakura.webp" alt="Cherry blossom pixel art in Ms Paint">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-6">
+                    <a class="gallery-item img-popup" href="img/paint/ipad-meadow.webp">
+                        <img src="img/paint/ipad-meadow.webp" alt="Meadow pixel art on iPad">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="gallery-item img-popup" href="img/paint/ipad-sakura.webp">
+                        <img src="img/paint/ipad-sakura.webp" alt="Anime pixel art on iPad">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="gallery-item img-popup" href="img/pinball/tablet-mission.jpg">
+                        <img src="img/pinball/tablet-mission.jpg" alt="3D Pinball Space Cadet mission screen on iPad">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="gallery-item img-popup" href="img/pinball/phone-gameover.jpg">
+                        <img src="img/pinball/phone-gameover.jpg" alt="3D Pinball Space Cadet game over on a phone">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section S T A R T -->
+    <section class="work-process-section section-padding pt-0 fix">
+        <div class="work-process-container-wrapper style1">
+            <div class="container">
+                <div class="section-title text-center mxw-565 mx-auto">
+                    <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
+                        How It Works <img src="assets/images/icon/fireIcon.svg" alt="">
+                    </div>
+                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">Get Started In Three Easy Steps</h2>
+                </div>
+                <div class="work-process-wrapper style1">
+                    <div class="shape"><img src="assets/images/shape/workProcessShape1_1.png" alt=""></div>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="work-process-box style1 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="step">STEP - 01</div>
+                                <div class="title">Download For Free</div>
+                                <div class="text">Get the app from the App Store or Google Play</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="work-process-box style1 child2 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="step">STEP - 02</div>
+                                <div class="title">Open &amp; Play</div>
+                                <div class="text">No account needed, start drawing or playing right away</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="work-process-box style1 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="step">STEP - 03</div>
+                                <div class="title">Go Ad-Free</div>
+                                <div class="text">Optionally upgrade to remove ads and unlock extras</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section S T A R T -->
+    <div class="counter-section fix">
+        <div class="counter-container-wrapper style1">
+            <div class="container">
+                <div class="counter-wrapper style1 section-padding"
+                    data-bg-src="assets/images/shape/counterShape1_1.png">
+                    <div class="shape"></div>
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-xl-3 col-md-6 d-flex justify-content-center">
+                                <div class="counter-box style1 wow fadeInUp" data-wow-delay=".2s">
+                                    <div class="counter">
+                                        <span class="counter-number">2</span>
+                                    </div>
+                                    <p class="text">Apps published on iOS and Android</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 d-flex justify-content-center">
+                                <div class="counter-box style1 wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="counter">
+                                        <span class="counter-number">3</span>
+                                    </div>
+                                    <p class="text">Device types: iPhone, iPad and Android</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 d-flex justify-content-center">
+                                <div class="counter-box style1 wow fadeInUp" data-wow-delay=".6s">
+                                    <div class="counter">
+                                        <span class="counter-number">5</span>
+                                    </div>
+                                    <p class="text">Image formats supported in Ms Paint</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 d-flex justify-content-center">
+                                <div class="counter-box style1 wow fadeInUp" data-wow-delay=".8s">
+                                    <div class="counter">
+                                        <span class="counter-number">9</span>
+                                    </div>
+                                    <p class="text">Fleet ranks to earn in 3D Pinball Space Cadet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Faq Section S T A R T -->
+    <section class="faq-section section-padding fix" id="faq">
+        <div class="container">
+            <div class="faq-wrapper style1">
+                <div class="row gy-5 gy-xl-0 gx-60 d-flex align-items-start">
+                    <div class="col-xl-6">
+                        <div class="faq-content style1">
+                            <div class="section-title">
+                                <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
+                                    FAQs <img src="assets/images/icon/fireIcon.svg" alt="">
+                                </div>
+                                <h2 class="title wow fadeInUp" data-wow-delay=".4s">Frequently Asked Questions</h2>
+                                <p class="section-desc wow fadeInUp" data-wow-delay=".6s">Quick answers about our
+                                    apps. Can't find what you need? Email us at
+                                    <a href="mailto:dujacksmith@gmail.com">dujacksmith@gmail.com</a>.</p>
+                            </div>
+                            <div class="faq-accordion">
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".3s">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                                Are the apps free?
+                                            </button>
+                                        </h5>
+                                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                Yes. Ms Paint and 3D Pinball Space Cadet are free to download and use. They
+                                                show ads, and offer optional in-app purchases (such as VIP in Ms Paint)
+                                                that remove ads and unlock extra content.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".4s">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
+                                                aria-controls="faq2">
+                                                Which devices are supported?
+                                            </button>
+                                        </h5>
+                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                Both apps are available for iPhone on the App Store and for Android
+                                                phones on Google Play. Ms Paint is also designed for iPad.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".5s">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
+                                                aria-controls="faq3">
+                                                Do I need an account?
+                                            </button>
+                                        </h5>
+                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                No. There is no sign-up or login. Your drawings stay on your device
+                                                unless you choose to save them to Photos or share them.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".6s">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
+                                                aria-controls="faq4">
+                                                How do I restore a purchase?
+                                            </button>
+                                        </h5>
+                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                Sign in with the same Apple ID or Google account you used to buy, then
+                                                tap "Restore Purchases" in the app's settings or VIP screen. Payments
+                                                and refunds are handled by Apple and Google.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".7s">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
+                                                aria-controls="faq5">
+                                                What data do the apps collect?
+                                            </button>
+                                        </h5>
+                                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                We do not collect personal information ourselves. Our advertising
+                                                partner (Google AdMob) may use device identifiers to show ads. Read
+                                                the full details in our <a href="privacy.html">Privacy Policy</a>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="faq-shots">
+                            <img class="wow fadeInUp" data-wow-delay=".2s" src="img/paint/phone-sakura.webp"
+                                alt="Ms Paint on iPhone">
+                            <img class="float-bob-x" src="img/paint/phone-night.webp" alt="Ms Paint dark theme on iPhone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cta Section S T A R T -->
+    <section class="cta-section" id="download">
+        <div class="cta-container-wrapper style1">
+            <div class="container">
+                <div class="cta-wrapper style1 section-padding fix">
+                    <div class="shape1 d-none d-xxl-block"><img src="assets/images/shape/ctaShape1_1.png" alt=""></div>
+                    <div class="shape2 d-none d-xxl-block"><img src="assets/images/shape/ctaShape1_2.png" alt=""></div>
+                    <div class="shape3 d-none d-xxl-block"><img src="assets/images/shape/ctaShape1_3.png" alt=""></div>
+                    <div class="shape4 d-none d-xxl-block"><img src="assets/images/shape/ctaShape1_4.png" alt=""></div>
+                    <div class="container">
+                        <div class="row gy-5 align-items-center">
+                            <div class="col-xl-8 order-2 order-xl-1">
+                                <div class="cta-content">
+                                    <div class="section-title">
+                                        <div class="subtitle text-white bg2 wow fadeInUp" data-wow-delay=".2s">
+                                            Download <img src="assets/images/icon/fireIcon.svg" alt="">
+                                        </div>
+                                        <h2 class="title text-white wow fadeInUp" data-wow-delay=".4s">Get Our Apps
+                                            Free On iOS &amp; Android</h2>
+                                        <p class="section-desc text-white mxw-651 wow fadeInUp" data-wow-delay=".6s">
+                                            Available now on the App Store and Google Play.</p>
+                                    </div>
+                                    <div class="cta-apps">
+                                        <div class="cta-app">
+                                            <img class="icon" src="img/paint/icon.jpg" alt="">
+                                            <span class="name">Ms Paint</span>
+                                            <a href="https://apps.apple.com/us/app/paint-ms/id1619725004"
+                                                target="_blank" rel="noopener"><img
+                                                    src="assets/images/cta/ctaAppleStore1_1.png"
+                                                    alt="Ms Paint on the App Store"></a>
+                                            <a href="https://play.google.com/store/apps/details?id=com.nhysoft.mspaint"
+                                                target="_blank" rel="noopener"><img
+                                                    src="assets/images/cta/ctaplayStore1_1.png"
+                                                    alt="Ms Paint on Google Play"></a>
+                                        </div>
+                                        <div class="cta-app">
+                                            <img class="icon" src="img/pinball/icon.jpg" alt="">
+                                            <span class="name">3D Pinball Space Cadet</span>
+                                            <a href="https://apps.apple.com/us/app/3d-pinball-space/id6455495086"
+                                                target="_blank" rel="noopener"><img
+                                                    src="assets/images/cta/ctaAppleStore1_1.png"
+                                                    alt="3D Pinball Space Cadet on the App Store"></a>
+                                            <a href="https://play.google.com/store/apps/details?id=com.uhdsoft.Fireworks"
+                                                target="_blank" rel="noopener"><img
+                                                    src="assets/images/cta/ctaplayStore1_1.png"
+                                                    alt="3D Pinball Space Cadet on Google Play"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 order-1 order-xl-2">
+                                <div class="cta-thumb cta-phone wow fadeInUp" data-wow-delay=".2s">
+                                    <img src="img/paint/phone-night.webp" alt="Ms Paint on iPhone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section    S T A R T -->
+    <footer class="footer-section position-relative" id="contact">
+        <div class="footer-widgets-wrapper style1 fix">
+            <div class="shape1"><img src="assets/images/shape/footerShape1_1.png" alt=""></div>
+            <div class="shape2"><img src="assets/images/shape/footerShape1_2.png" alt=""></div>
+            <div class="shape3"><img src="assets/images/shape/footerShape1_3.png" alt=""></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/dunv-logo.svg" alt="DUNV">
+                                </a>
+                            </div>
+                            <div class="footer-content">
+                                <p>
+                                    Simple, fun mobile apps for iPhone, iPad and Android.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3> Pages </h3>
+                            </div>
+                            <ul class="list-area">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#apps">Our Apps</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3> Apps </h3>
+                            </div>
+                            <ul class="list-area">
+                                <li><a href="#paint">Ms Paint</a></li>
+                                <li><a href="#pinball">3D Pinball Space Cadet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <div class="contact-box">
+                                <div class="subtitle">Contact</div>
+                                <div class="widget-head">Questions or feedback?</div>
+                                <div class="text">We read every email and usually reply within a few days.</div>
+                                <div class="info">
+                                    <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                                    <div class="link">
+                                        <a href="mailto:dujacksmith@gmail.com">dujacksmith@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="icon"><i class="fa-regular fa-globe"></i></div>
+                                    <div class="link">
+                                        <a href="https://nhysoft.github.io/">nhysoft.github.io</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom style1">
+            <div class="container">
+                <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                    <p>
+                        Copyright &copy; <span class="js-year">2026</span> DUNV. All rights reserved.
+                    </p>
+                    <ul class="social-links">
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Tilt Js >>-->
+    <script src="assets/js/tilt.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific popup Js >>-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< NIce Select Js >>-->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.js-year').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    </script>
+</body>
+
 </html>
